@@ -587,6 +587,21 @@ if(enemeydf14.isTouching(johnny)){
       if(bulletGroup.isTouching(enemeydf9)){
         enemeydf9.destroy();
       }
+      if(bulletGroup.isTouching(enemeydf10)){
+        enemeydf10.destroy();
+      }
+      if(bulletGroup.isTouching(enemeydf11)){
+        enemeydf11.destroy();
+      }
+      if(bulletGroup.isTouching(enemeydf12)){
+        enemeydf12.destroy();
+      }
+      if(bulletGroup.isTouching(enemeydf13)){
+        enemeydf13.destroy();
+      }
+      if(bulletGroup.isTouching(enemeydf14)){
+        enemeydf14.destroy();
+      }
   }
   
   
