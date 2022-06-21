@@ -16,7 +16,7 @@ var wall14
 var wall15
 var wall16
 var wall17
-var enemeydf,enemeydf2,enemeydf3,enemeydf4,enemeydf5,enemeydf6,enemeydf7,enemeydf8,enemeydf9,enemeydf10,enemeydf11,enemeydf12
+var enemeydf,enemeydf2,enemeydf3,enemeydf4,enemeydf5,enemeydf6,enemeydf7,enemeydf8,enemeydf9,enemeydf10,enemeydf11,enemeydf12,enemeydf13,enemeydf14
 var bullet,bulletGroup
 var life = 3
 var life2 = 3
@@ -69,10 +69,10 @@ createCanvas(windowWidth, windowHeight);
  enemeydf11.velocityX = 25;
  enemeydf12.velocityY = -25;
  enemeydf12.velocityX = 25;
- enemeydf13.velocityY = 22;
- enemeydf13.velocityX = -22;
- enemeydf14.velocityY = 22;
- enemeydf14.velocityX = 22;
+ enemeydf13.velocityY = 10;
+ enemeydf13.velocityX = -10;
+ enemeydf14.velocityY = 10;
+ enemeydf14.velocityX = 10;
 
  wall1 = createSprite(835,125,1600,10);
  wall2 = createSprite(300,215,520,10);
@@ -538,7 +538,7 @@ if(enemeydf14.isTouching(johnny)){
       }
 
       // Making pew pew
-      if(keyWentDown("space")){
+      if(keyWentDown("D")){
         bullet = createSprite(johnny.x,johnny.y,5,5);
         bullet.velocityX = 10;
         bulletGroup.add(bullet);
@@ -552,7 +552,7 @@ if(enemeydf14.isTouching(johnny)){
 
       if(keyWentDown("W")){
         bullet = createSprite(johnny.x,johnny.y,5,5);
-        bullet.velocityY = 10;
+        bullet.velocityY = -10;
         bulletGroup.add(bullet);
       }
       
@@ -632,6 +632,11 @@ if(enemeydf14.isTouching(johnny)){
     enemeydf7.destroy();
     enemeydf8.destroy();
     enemeydf9.destroy();
+    enemeydf10.destroy();
+    enemeydf11.destroy();
+    enemeydf12.destroy();
+    enemeydf13.destroy();
+    enemeydf14.destroy();
     johnny.destroy();
   }
 }
