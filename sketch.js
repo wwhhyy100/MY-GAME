@@ -69,10 +69,10 @@ createCanvas(windowWidth, windowHeight);
  enemeydf11.velocityX = 25;
  enemeydf12.velocityY = -25;
  enemeydf12.velocityX = 25;
- enemeydf13.velocityY = 10;
- enemeydf13.velocityX = -10;
- enemeydf14.velocityY = 10;
- enemeydf14.velocityX = 10;
+ enemeydf13.velocityY = 22;
+ enemeydf13.velocityX = -22;
+ enemeydf14.velocityY = 22;
+ enemeydf14.velocityX = 22;
 
  wall1 = createSprite(835,125,1600,10);
  wall2 = createSprite(300,215,520,10);
